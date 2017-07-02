@@ -10,7 +10,9 @@
 		55811EEB1F088FC900D53AA9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55811EEA1F088FC900D53AA9 /* Default-568h@2x.png */; };
 		55811EF01F08900400D53AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55811EEE1F08900400D53AA9 /* LaunchScreen.storyboard */; };
 		55811EF11F08900400D53AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55811EEF1F08900400D53AA9 /* Main.storyboard */; };
-		55811EF31F08901600D53AA9 /* Freedom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55811EF21F08901600D53AA9 /* Freedom.swift */; };
+		55811EF31F08901600D53AA9 /* FreedomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55811EF21F08901600D53AA9 /* FreedomActivity.swift */; };
+		55811EF51F08954B00D53AA9 /* ChromeFreedomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55811EF41F08954B00D53AA9 /* ChromeFreedomActivity.swift */; };
+		55D2FCDA1F089D690052604B /* Freedom.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 55D2FCD91F089D690052604B /* Freedom.bundle */; };
 		55E579721F08892100E04D4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E579711F08892100E04D4F /* ViewController.swift */; };
 		55E579741F08892600E04D4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E579731F08892600E04D4F /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -20,7 +22,9 @@
 		55811EEC1F088FD200D53AA9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		55811EEE1F08900400D53AA9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Supporting Files/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		55811EEF1F08900400D53AA9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Supporting Files/Main.storyboard"; sourceTree = SOURCE_ROOT; };
-		55811EF21F08901600D53AA9 /* Freedom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freedom.swift; sourceTree = SOURCE_ROOT; };
+		55811EF21F08901600D53AA9 /* FreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreedomActivity.swift; sourceTree = SOURCE_ROOT; };
+		55811EF41F08954B00D53AA9 /* ChromeFreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromeFreedomActivity.swift; sourceTree = SOURCE_ROOT; };
+		55D2FCD91F089D690052604B /* Freedom.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Freedom.bundle; sourceTree = SOURCE_ROOT; };
 		55E5795C1F08877500E04D4F /* Freedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E579711F08892100E04D4F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
 		55E579731F08892600E04D4F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -68,7 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				55E579731F08892600E04D4F /* AppDelegate.swift */,
-				55811EF21F08901600D53AA9 /* Freedom.swift */,
+				55D2FCD91F089D690052604B /* Freedom.bundle */,
+				55811EF21F08901600D53AA9 /* FreedomActivity.swift */,
+				55811EF41F08954B00D53AA9 /* ChromeFreedomActivity.swift */,
 				55E579711F08892100E04D4F /* ViewController.swift */,
 				55811EDF1F088E2300D53AA9 /* Supporting Files */,
 			);
@@ -135,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D2FCDA1F089D690052604B /* Freedom.bundle in Resources */,
 				55811EEB1F088FC900D53AA9 /* Default-568h@2x.png in Resources */,
 				55811EF11F08900400D53AA9 /* Main.storyboard in Resources */,
 				55811EF01F08900400D53AA9 /* LaunchScreen.storyboard in Resources */,
@@ -149,7 +156,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				55E579741F08892600E04D4F /* AppDelegate.swift in Sources */,
-				55811EF31F08901600D53AA9 /* Freedom.swift in Sources */,
+				55811EF31F08901600D53AA9 /* FreedomActivity.swift in Sources */,
+				55811EF51F08954B00D53AA9 /* ChromeFreedomActivity.swift in Sources */,
 				55E579721F08892100E04D4F /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
