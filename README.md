@@ -15,7 +15,59 @@ Freedom currently supports:
 
 <img src="https://github.com/ArtSabintsev/Freedom/blob/master/screenshot.png?raw=true" height="480">
 
-## Sample Code
+## Installation Instructions
+
+### CocoaPods
+For Swift 3 support:
+```ruby
+pod 'Freedom'
+```
+
+For Swift 4 support:
+```ruby
+pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch => 'swift4'
+```
+
+### Carthage
+For Swift 3 support:
+
+```swift
+github "ArtSabintsev/Freedom"
+```
+
+For Swift 4 support:
+```swift
+github "ArtSabintsev/Freedom", "swift4"
+```
+
+### Swift Package Manager
+```swift
+.Package(url: "https://github.com/ArtSabintsev/Freedom.git", majorVersion: 1)
+```
+
+## Usage
+
+```swift
+@IBAction func openURL(_ sender: UIButton) {
+
+       // A Sample URL that just happens to be my personal website.
+       let url = URL(string: "http://www.sabintsev.com")!
+
+       // Fetch activities for all third-party browsers supported by Freedom.
+       let activities = Freedom.browsers()
+
+       // Alternatively, one could select a specific browser (or browsers)
+       // let activities = Freedom.browsers([.chrome])
+
+       let vc = UIActivityViewController(activityItems: [url], applicationActivities: activities)
+
+       present(vc, animated: true, completion: nil)
+   }
+
+```
+
+## Notes
+ Even if you enable Freedom to support all browsers via `Freedom.browsers()`, only the browsers installed on your users device will be visible to the end-user. Therefore, it is beneficial to all of your users to initialize Freedom with all supported browsers.
 
 ## Created and maintained by
 [Arthur Ariel Sabintsev](http://www.sabintsev.com/)
