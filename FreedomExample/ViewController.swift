@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBAction func openURL(_ sender: UIButton) {
         let url = URL(string: "http://www.sabintsev.com")!
-        let activities = [ChromeFreedomActivity(), FirefoxFreedomActivity()]
+        let activities = Freedom.browsers()
         let vc = UIActivityViewController(activityItems: [url], applicationActivities: activities)
         present(vc, animated: true, completion: nil)
     }

@@ -6,8 +6,6 @@
 //  Copyright © 2017 Arthur Ariel Sabintsev. All rights reserved.
 //
 
-import Foundation
-
 import UIKit
 
 final class FirefoxFreedomActivity: UIActivity, FreedomActivating {
@@ -88,8 +86,6 @@ final class FirefoxFreedomActivity: UIActivity, FreedomActivating {
             let url = URL(string: deepLink + "open-url?url=" + activityURL.absoluteString) else {
                 return activityDidFinish(false)
         }
-
-        print(URL(string: deepLink + "open-url?url=" + activityURL.absoluteString))
 
         UIApplication.shared.open(url, options: [:]) { [unowned self] opened in
             guard opened else {
