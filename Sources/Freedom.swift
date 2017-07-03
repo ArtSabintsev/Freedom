@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class Freedom {
+public final class Freedom {
 
     /// Third-Party Browsers Supported by Freedom
     ///
