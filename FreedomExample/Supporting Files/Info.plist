@@ -35,6 +35,7 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>googlechrome</string>
+		<string>firefox</string>
 	</array>
 </dict>
 </plist>

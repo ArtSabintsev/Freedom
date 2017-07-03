@@ -19,3 +19,7 @@ protocol FreedomActivating {
     init(callbackURL: URL?)
     
 }
+
+extension FreedomActivating {
+    
+}

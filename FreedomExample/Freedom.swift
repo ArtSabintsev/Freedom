@@ -10,6 +10,11 @@ import Foundation
 
 final class Freedom {
 
+    public enum Browsers {
+        case chrome
+        case firefox
+    }
+
     static var bundle: Bundle {
         let path = Bundle(for: Freedom.self).path(forResource: "Freedom", ofType: "bundle") ?? Bundle.main.bundlePath
         return Bundle(path: path) ?? Bundle.main

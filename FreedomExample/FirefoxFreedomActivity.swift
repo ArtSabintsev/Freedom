@@ -1,46 +1,38 @@
 //
-//  ChromeFreedomActivity.swift
+//  FirefoxFreedomActivity.swift
 //  Freedom
 //
-//  Created by Sabintsev, Arthur on 7/1/17.
+//  Created by Sabintsev, Arthur on 7/2/17.
 //  Copyright © 2017 Arthur Ariel Sabintsev. All rights reserved.
 //
 
+import Foundation
+
 import UIKit
 
-final class ChromeFreedomActivity: UIActivity, FreedomActivating {
+final class FirefoxFreedomActivity: UIActivity, FreedomActivating {
 
     override class var activityCategory: UIActivityCategory {
         return .action
     }
 
     override var activityImage: UIImage? {
-        return UIImage(named: "chrome", in: Freedom.bundle, compatibleWith: nil)
+        return UIImage(named: "firefox", in: Freedom.bundle, compatibleWith: nil)
     }
 
     override var activityTitle: String? {
-        return "Open in Chrome"
+        return "Open in Firefox"
     }
 
     override var activityType: UIActivityType? {
         guard let bundleID = Bundle.main.bundleIdentifier else { return nil }
-        let type = bundleID + "." + String(describing: ChromeFreedomActivity.self)
+        let type = bundleID + "." + String(describing: FirefoxFreedomActivity.self)
         return UIActivityType(rawValue: type)
     }
 
-    var activityDeepLink: String? = "googlechrome://"
+    var activityDeepLink: String? = "firefox://"
 
-    var activityURL: URL? {
-        didSet {
-            guard let scheme = activityURL?.scheme else { return }
-            switch scheme {
-            case URLComponents.Schemes.https:
-                activityDeepLink = "googlechromes://"
-            default:
-                break
-            }
-        }
-    }
+    var activityURL: URL?
 
     var callbackURL: URL?
 
@@ -93,18 +85,18 @@ final class ChromeFreedomActivity: UIActivity, FreedomActivating {
         guard let activityURL = activityURL else { return activityDidFinish(false) }
 
         guard let deepLink = activityDeepLink,
-            let formattedURL = activityURL.withoutScheme(),
-            let url = URL(string: deepLink + formattedURL.absoluteString) else {
+            let url = URL(string: deepLink + "open-url?url=" + activityURL.absoluteString) else {
                 return activityDidFinish(false)
         }
+
+        print(URL(string: deepLink + "open-url?url=" + activityURL.absoluteString))
 
         UIApplication.shared.open(url, options: [:]) { [unowned self] opened in
             guard opened else {
                 return self.activityDidFinish(false)
             }
         }
-
+        
         activityDidFinish(true)
     }
-
 }

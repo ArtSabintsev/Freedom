@@ -22,5 +22,14 @@ extension URL {
 
         return URL(string: modifiedString)
     }
+
+    func conformToHypertextProtocol() -> Bool {
+        guard let scheme = self.scheme,
+            scheme == URLComponents.Schemes.http || scheme == URLComponents.Schemes.https else {
+                return false
+        }
+
+        return true
+    }
     
 }
