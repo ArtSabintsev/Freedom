@@ -12,7 +12,7 @@ final class Freedom {
 
     /// Third-Party Browsers Supported by Freedom
     ///
-    /// - brave: Brave for iOS (https://itunes.apple.com/us/app/brave-browser-fast-adblocker/id1052879175?mt=8)
+    /// - brave: Brave Browser (https://itunes.apple.com/us/app/brave-browser-fast-adblocker/id1052879175?mt=8)
     /// - chrome: Google Chrome (https://itunes.apple.com/us/app/google-chrome-the-fast-and-secure-web-browser/id535886823?mt=8)
     /// - firefox: Firefox Web Browser (https://itunes.apple.com/us/app/firefox-web-browser/id989804926?mt=8)
     public enum Browser {

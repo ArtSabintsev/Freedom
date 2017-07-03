@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = "The Freedom to Open URLs in Third-Party Browsers on iOS with these Custom UIActivity Subclasses."
 
   s.description  = <<-DESC
-Freedom enables you to add the ability to open URLs in third-party browsers from within your app.
+Freedom enables your app to open URLs in third-party browsers via the share sheet.
                    DESC
 
   s.homepage     = "https://github.com/ArtSabintsev/Freedom"
