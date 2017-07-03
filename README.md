@@ -1,6 +1,6 @@
 # Freedom 🦅
 
-### The Freedom to Open URLs in Third-Party Browsers on iOS with these Custom UIActivity Subclasses.
+### The Freedom to Open URLs in Third-Party Browsers on iOS with Custom UIActivity Subclasses.
 
  [![CocoaPods](https://img.shields.io/cocoapods/v/Freedom.svg)](https://cocoapods.org/pods/Freedom)  [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/) [![CocoaPods](https://img.shields.io/cocoapods/dt/Freedom.svg)](https://cocoapods.org/pods/Freedom) [![CocoaPods](https://img.shields.io/cocoapods/dm/Freedom.svg)](https://cocoapods.org/pods/Freedom)
 ---
