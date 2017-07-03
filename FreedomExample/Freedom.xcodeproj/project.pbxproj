@@ -10,9 +10,12 @@
 		55811EEB1F088FC900D53AA9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55811EEA1F088FC900D53AA9 /* Default-568h@2x.png */; };
 		55811EF01F08900400D53AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55811EEE1F08900400D53AA9 /* LaunchScreen.storyboard */; };
 		55811EF11F08900400D53AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55811EEF1F08900400D53AA9 /* Main.storyboard */; };
-		55811EF31F08901600D53AA9 /* FreedomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55811EF21F08901600D53AA9 /* FreedomActivity.swift */; };
 		55811EF51F08954B00D53AA9 /* ChromeFreedomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55811EF41F08954B00D53AA9 /* ChromeFreedomActivity.swift */; };
 		55D2FCDA1F089D690052604B /* Freedom.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 55D2FCD91F089D690052604B /* Freedom.bundle */; };
+		55D2FCDC1F0961760052604B /* FreedomURLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2FCDB1F0961760052604B /* FreedomURLComponentsExtension.swift */; };
+		55D2FCDE1F09CF850052604B /* FreedomURLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2FCDD1F09CF850052604B /* FreedomURLExtension.swift */; };
+		55D2FCED1F09DB5B0052604B /* Freedom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2FCEB1F09DB5B0052604B /* Freedom.swift */; };
+		55D2FCEE1F09DB5B0052604B /* FreedomActivating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2FCEC1F09DB5B0052604B /* FreedomActivating.swift */; };
 		55E579721F08892100E04D4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E579711F08892100E04D4F /* ViewController.swift */; };
 		55E579741F08892600E04D4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E579731F08892600E04D4F /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -22,9 +25,12 @@
 		55811EEC1F088FD200D53AA9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		55811EEE1F08900400D53AA9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Supporting Files/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		55811EEF1F08900400D53AA9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Supporting Files/Main.storyboard"; sourceTree = SOURCE_ROOT; };
-		55811EF21F08901600D53AA9 /* FreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreedomActivity.swift; sourceTree = SOURCE_ROOT; };
 		55811EF41F08954B00D53AA9 /* ChromeFreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromeFreedomActivity.swift; sourceTree = SOURCE_ROOT; };
 		55D2FCD91F089D690052604B /* Freedom.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Freedom.bundle; sourceTree = SOURCE_ROOT; };
+		55D2FCDB1F0961760052604B /* FreedomURLComponentsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreedomURLComponentsExtension.swift; sourceTree = SOURCE_ROOT; };
+		55D2FCDD1F09CF850052604B /* FreedomURLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreedomURLExtension.swift; sourceTree = SOURCE_ROOT; };
+		55D2FCEB1F09DB5B0052604B /* Freedom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freedom.swift; sourceTree = SOURCE_ROOT; };
+		55D2FCEC1F09DB5B0052604B /* FreedomActivating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreedomActivating.swift; sourceTree = SOURCE_ROOT; };
 		55E5795C1F08877500E04D4F /* Freedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E579711F08892100E04D4F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
 		55E579731F08892600E04D4F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -52,6 +58,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		55D2FCDF1F09D34D0052604B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				55D2FCDD1F09CF850052604B /* FreedomURLExtension.swift */,
+				55D2FCDB1F0961760052604B /* FreedomURLComponentsExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		55D2FCE01F09D3570052604B /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				55811EF41F08954B00D53AA9 /* ChromeFreedomActivity.swift */,
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
 		55E579531F08877500E04D4F = {
 			isa = PBXGroup;
 			children = (
@@ -72,10 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				55E579731F08892600E04D4F /* AppDelegate.swift */,
-				55D2FCD91F089D690052604B /* Freedom.bundle */,
-				55811EF21F08901600D53AA9 /* FreedomActivity.swift */,
-				55811EF41F08954B00D53AA9 /* ChromeFreedomActivity.swift */,
 				55E579711F08892100E04D4F /* ViewController.swift */,
+				55D2FCD91F089D690052604B /* Freedom.bundle */,
+				55D2FCEB1F09DB5B0052604B /* Freedom.swift */,
+				55D2FCEC1F09DB5B0052604B /* FreedomActivating.swift */,
+				55D2FCE01F09D3570052604B /* Activities */,
+				55D2FCDF1F09D34D0052604B /* Extensions */,
 				55811EDF1F088E2300D53AA9 /* Supporting Files */,
 			);
 			path = Freedom;
@@ -155,9 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D2FCDE1F09CF850052604B /* FreedomURLExtension.swift in Sources */,
 				55E579741F08892600E04D4F /* AppDelegate.swift in Sources */,
-				55811EF31F08901600D53AA9 /* FreedomActivity.swift in Sources */,
+				55D2FCDC1F0961760052604B /* FreedomURLComponentsExtension.swift in Sources */,
+				55D2FCEE1F09DB5B0052604B /* FreedomActivating.swift in Sources */,
 				55811EF51F08954B00D53AA9 /* ChromeFreedomActivity.swift in Sources */,
+				55D2FCED1F09DB5B0052604B /* Freedom.swift in Sources */,
 				55E579721F08892100E04D4F /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

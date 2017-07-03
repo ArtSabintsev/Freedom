@@ -8,14 +8,14 @@
 
 import UIKit
 
-final class ChromeFreedomActivity: FreedomActivity {
+final class ChromeFreedomActivity: UIActivity, FreedomActivating {
 
     override class var activityCategory: UIActivityCategory {
         return .action
     }
 
     override var activityImage: UIImage? {
-        return UIImage(named: "chrome", in: activityBundle, compatibleWith: nil)
+        return UIImage(named: "chrome", in: Freedom.bundle, compatibleWith: nil)
     }
 
     override var activityTitle: String? {
@@ -28,24 +28,55 @@ final class ChromeFreedomActivity: FreedomActivity {
         return UIActivityType(rawValue: type)
     }
 
-    var secureDeepLink: String {
-        return "googlechromes:"
+    var activityDeepLink: String? = "googlechrome://"
+
+    var activityURL: URL? {
+        didSet {
+            guard let scheme = activityURL?.scheme else { return }
+            switch scheme {
+            case URLComponents.Schemes.https:
+                activityDeepLink = "googlechromes://"
+            default:
+                break
+            }
+        }
     }
 
-    var unsecureDeepLink: String {
-        return "googlechrome:"
-    }
+    var callbackURL: URL?
 
-    override init(callbackURL: URL? = nil) {
-        super.init(callbackURL: callbackURL)
+    init(callbackURL: URL? = nil) {
+        super.init()
 
         self.callbackURL = callbackURL
+    }
+
+    override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
+        for item in activityItems {
+
+            guard let deepLinkURLString = activityDeepLink,
+                let deepLinkURL = URL(string: deepLinkURLString),
+                UIApplication.shared.canOpenURL(deepLinkURL) else {
+                    return false
+            }
+
+            guard let url = item as? URL else {
+                return false
+            }
+
+            guard url.scheme == URLComponents.Schemes.http || url.scheme == URLComponents.Schemes.https else {
+                return false
+            }
+
+            return true
+        }
+
+        return false
     }
 
     override func prepare(withActivityItems activityItems: [Any]) {
         activityItems.forEach { item in
             guard let url = item as? URL else { return }
-            guard url.scheme == "http" || url.scheme == "https" else { return }
+            guard url.scheme == URLComponents.Schemes.http || url.scheme == URLComponents.Schemes.https else { return }
 
             let urlString = url.absoluteString
 
@@ -58,56 +89,22 @@ final class ChromeFreedomActivity: FreedomActivity {
         }
     }
 
-    override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
-        for item in activityItems {
-            guard let url = item as? URL else { return false }
-            guard url.scheme == "http" || url.scheme == "https" else { return false }
-
-            return true
-        }
-
-        return false
-    }
-
     override func perform() {
-        guard let activityURL = activityURL else { return }
+        guard let activityURL = activityURL else { return activityDidFinish(false) }
 
-        guard let scheme = activityURL.scheme else { return }
-
-        var deepLink: String = "" // This will default to Safari App.
-
-        switch scheme {
-        case "http":
-            deepLink = unsecureDeepLink
-        case "https":
-            deepLink = secureDeepLink
-        default:
-            break
-        }
-
-        guard let formattedURL = activityURL.withoutScheme(),
+        guard let deepLink = activityDeepLink,
+            let formattedURL = activityURL.withoutScheme(),
             let url = URL(string: deepLink + formattedURL.absoluteString) else {
-                return
+                return activityDidFinish(false)
         }
 
-        UIApplication.shared.open(url, options: [:]) { opened in
+        UIApplication.shared.open(url, options: [:]) { [unowned self] opened in
             guard opened else {
-                return
+                return self.activityDidFinish(false)
             }
         }
 
         activityDidFinish(true)
-    }
-
-}
-
-private extension URL {
-
-    func withoutScheme() -> URL? {
-        let components = NSURLComponents(url: self, resolvingAgainstBaseURL: false)
-        components?.scheme = nil
-
-        return components?.url
     }
 
 }
