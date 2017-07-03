@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // A Sample URL that just happens to be my personal website.
         let url = URL(string: "http://www.sabintsev.com")!
 
+        // Enable Debug Logs (disabled by default)
+        Freedom.debugEnabled = true
+
         // Fetch activities for all third-party browsers supported by Freedom.
         let activities = Freedom.browsers()
 

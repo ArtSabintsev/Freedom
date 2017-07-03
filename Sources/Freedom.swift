@@ -25,6 +25,9 @@ final class Freedom {
         }
     }
 
+    // Enables Debug Logs. Disabled by default.
+    public static var debugEnabled = false
+
     /// An array of `UIActivity` instances that represent third-party browsers that
     /// can be used to open URLs in an instance of `UIActivityViewController`.
     ///
@@ -34,14 +37,17 @@ final class Freedom {
         var activities: [UIActivity] = []
 
         if browsers.contains(.brave) {
+            printDebugMessage("Freedom is initialized to support the Brave Browser.")
             activities.append(BraveFreedomActivity())
         }
 
         if browsers.contains(.chrome) {
+            printDebugMessage("Freedom is initialized to support the Google Chrome Browser.")
             activities.append(ChromeFreedomActivity())
         }
 
         if browsers.contains(.firefox) {
+            printDebugMessage("Freedom is initialized to support the Firefox Web Browser.")
             activities.append(FirefoxFreedomActivity())
         }
 
@@ -58,6 +64,18 @@ extension Freedom {
     static var bundle: Bundle {
         let path = Bundle(for: Freedom.self).path(forResource: "Freedom", ofType: "bundle") ?? Bundle.main.bundlePath
         return Bundle(path: path) ?? Bundle.main
+    }
+
+    /// Prints a debug message if `debugEnabled` is set to `true`.
+    ///
+    /// - Parameters:
+    ///   - message: The debug message to print
+    ///   - file: The file from which the debug message originated.
+    ///   - function: The function from which the debug message originated.
+    ///   - line: The line number of the file from which the debug message originated.
+    static func printDebugMessage(_ message: String, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
+        guard debugEnabled else { return }
+        print("\(file).\(function)[\(line)]: \(message)")
     }
 
 }

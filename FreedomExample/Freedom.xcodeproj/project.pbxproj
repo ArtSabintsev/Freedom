@@ -78,9 +78,9 @@
 		55A914291F09E8CE000B5311 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				55A9143A1F09E8F1000B5311 /* BraveFreedomActivity.swift */,
 				55A9142A1F09E8CE000B5311 /* ChromeFreedomActivity.swift */,
 				55A9142B1F09E8CE000B5311 /* FirefoxFreedomActivity.swift */,
-				55A9143A1F09E8F1000B5311 /* BraveFreedomActivity.swift */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
