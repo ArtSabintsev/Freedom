@@ -11,10 +11,20 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func openURL(_ sender: UIButton) {
+
+        // A Sample URL that just happens to be my personal website.
         let url = URL(string: "http://www.sabintsev.com")!
+
+        // Fetch activities for all third-party browsers supported by Freedom.
         let activities = Freedom.browsers()
+
+        // Alternatively, one could select a specific browser (or browsers)
+//        let activities = Freedom.browsers([.chrome])
+
         let vc = UIActivityViewController(activityItems: [url], applicationActivities: activities)
+
         present(vc, animated: true, completion: nil)
+
     }
 
 }
