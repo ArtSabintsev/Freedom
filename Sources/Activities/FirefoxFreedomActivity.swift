@@ -79,10 +79,14 @@ final class FirefoxFreedomActivity: UIActivity, FreedomActivating {
                 return activityDidFinish(false)
         }
 
-        UIApplication.shared.open(url, options: [:]) { [unowned self] opened in
-            guard opened else {
-                return self.activityDidFinish(false)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:]) { [unowned self] opened in
+                guard opened else {
+                    return self.activityDidFinish(false)
+                }
             }
+        } else {
+            UIApplication.shared.openURL(url)
         }
         
         activityDidFinish(true)
