@@ -59,7 +59,7 @@ final class ChromeFreedomActivity: UIActivity, FreedomActivating {
             }
 
             guard let url = item as? URL else {
-                return false
+               continue
             }
 
             guard url.conformToHypertextProtocol() else {
@@ -101,7 +101,8 @@ final class ChromeFreedomActivity: UIActivity, FreedomActivating {
         }
 
         guard let deepLink = activityDeepLink,
-            let url = URL(string: deepLink + "open-url?url=" + activityURL.absoluteString) else {
+            let formattedURL = activityURL.withoutScheme(),
+            let url = URL(string: deepLink + formattedURL.absoluteString) else {
                 return activityDidFinish(false)
         }
 
@@ -110,11 +111,11 @@ final class ChromeFreedomActivity: UIActivity, FreedomActivating {
                 guard opened else {
                     return self.activityDidFinish(false)
                 }
-                Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in Google Chrome.")
+                Freedom.printDebugMessage("The user successfully opened the url, \(formattedURL.absoluteString), in Google Chrome.")
             }
         } else {
             UIApplication.shared.openURL(url)
-            Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in Google Chrome.")
+            Freedom.printDebugMessage("The user successfully opened the url, \(formattedURL.absoluteString), in Google Chrome.")
         }
         
         activityDidFinish(true)

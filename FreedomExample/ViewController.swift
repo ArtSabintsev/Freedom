@@ -6,7 +6,6 @@
 //  Copyright © 2017 Arthur Ariel Sabintsev. All rights reserved.
 //
 
-import Freedom
 import UIKit
 
 class ViewController: UIViewController {

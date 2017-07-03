@@ -46,7 +46,7 @@ final class BraveFreedomActivity: UIActivity, FreedomActivating {
             }
 
             guard let url = item as? URL else {
-                return false
+                continue
             }
 
             guard url.conformToHypertextProtocol() else {
