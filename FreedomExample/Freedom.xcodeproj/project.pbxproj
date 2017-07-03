@@ -7,34 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552FF8E21F0A162D00620217 /* BraveFreedomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FF8DA1F0A162D00620217 /* BraveFreedomActivity.swift */; };
+		552FF8E31F0A162D00620217 /* ChromeFreedomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FF8DB1F0A162D00620217 /* ChromeFreedomActivity.swift */; };
+		552FF8E41F0A162D00620217 /* FirefoxFreedomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FF8DC1F0A162D00620217 /* FirefoxFreedomActivity.swift */; };
+		552FF8E51F0A162D00620217 /* Freedom.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 552FF8DD1F0A162D00620217 /* Freedom.bundle */; };
+		552FF8E61F0A162D00620217 /* Freedom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FF8DE1F0A162D00620217 /* Freedom.swift */; };
+		552FF8E71F0A162D00620217 /* FreedomActivating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FF8DF1F0A162D00620217 /* FreedomActivating.swift */; };
+		552FF8E81F0A162D00620217 /* FreedomURLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FF8E01F0A162D00620217 /* FreedomURLComponentsExtension.swift */; };
+		552FF8E91F0A162D00620217 /* FreedomURLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FF8E11F0A162D00620217 /* FreedomURLExtension.swift */; };
 		55811EEB1F088FC900D53AA9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55811EEA1F088FC900D53AA9 /* Default-568h@2x.png */; };
 		55811EF01F08900400D53AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55811EEE1F08900400D53AA9 /* LaunchScreen.storyboard */; };
 		55811EF11F08900400D53AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55811EEF1F08900400D53AA9 /* Main.storyboard */; };
-		55A914331F09E8CE000B5311 /* ChromeFreedomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9142A1F09E8CE000B5311 /* ChromeFreedomActivity.swift */; };
-		55A914341F09E8CE000B5311 /* FirefoxFreedomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9142B1F09E8CE000B5311 /* FirefoxFreedomActivity.swift */; };
-		55A914351F09E8CE000B5311 /* FreedomURLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9142D1F09E8CE000B5311 /* FreedomURLComponentsExtension.swift */; };
-		55A914361F09E8CE000B5311 /* FreedomURLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9142E1F09E8CE000B5311 /* FreedomURLExtension.swift */; };
-		55A914371F09E8CE000B5311 /* Freedom.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 55A9142F1F09E8CE000B5311 /* Freedom.bundle */; };
-		55A914381F09E8CE000B5311 /* Freedom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A914301F09E8CE000B5311 /* Freedom.swift */; };
-		55A914391F09E8CE000B5311 /* FreedomActivating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A914321F09E8CE000B5311 /* FreedomActivating.swift */; };
-		55A9143B1F09E8F1000B5311 /* BraveFreedomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9143A1F09E8F1000B5311 /* BraveFreedomActivity.swift */; };
 		55E579721F08892100E04D4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E579711F08892100E04D4F /* ViewController.swift */; };
 		55E579741F08892600E04D4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E579731F08892600E04D4F /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		552FF8DA1F0A162D00620217 /* BraveFreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BraveFreedomActivity.swift; sourceTree = "<group>"; };
+		552FF8DB1F0A162D00620217 /* ChromeFreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromeFreedomActivity.swift; sourceTree = "<group>"; };
+		552FF8DC1F0A162D00620217 /* FirefoxFreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirefoxFreedomActivity.swift; sourceTree = "<group>"; };
+		552FF8DD1F0A162D00620217 /* Freedom.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Freedom.bundle; sourceTree = "<group>"; };
+		552FF8DE1F0A162D00620217 /* Freedom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freedom.swift; sourceTree = "<group>"; };
+		552FF8DF1F0A162D00620217 /* FreedomActivating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreedomActivating.swift; sourceTree = "<group>"; };
+		552FF8E01F0A162D00620217 /* FreedomURLComponentsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreedomURLComponentsExtension.swift; sourceTree = "<group>"; };
+		552FF8E11F0A162D00620217 /* FreedomURLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreedomURLExtension.swift; sourceTree = "<group>"; };
 		55811EEA1F088FC900D53AA9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		55811EEC1F088FD200D53AA9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		55811EEE1F08900400D53AA9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Supporting Files/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		55811EEF1F08900400D53AA9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Supporting Files/Main.storyboard"; sourceTree = SOURCE_ROOT; };
-		55A9142A1F09E8CE000B5311 /* ChromeFreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromeFreedomActivity.swift; sourceTree = "<group>"; };
-		55A9142B1F09E8CE000B5311 /* FirefoxFreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirefoxFreedomActivity.swift; sourceTree = "<group>"; };
-		55A9142D1F09E8CE000B5311 /* FreedomURLComponentsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreedomURLComponentsExtension.swift; sourceTree = "<group>"; };
-		55A9142E1F09E8CE000B5311 /* FreedomURLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreedomURLExtension.swift; sourceTree = "<group>"; };
-		55A9142F1F09E8CE000B5311 /* Freedom.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Freedom.bundle; sourceTree = "<group>"; };
-		55A914301F09E8CE000B5311 /* Freedom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freedom.swift; sourceTree = "<group>"; };
-		55A914321F09E8CE000B5311 /* FreedomActivating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreedomActivating.swift; sourceTree = "<group>"; };
-		55A9143A1F09E8F1000B5311 /* BraveFreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BraveFreedomActivity.swift; sourceTree = "<group>"; };
 		55E5795C1F08877500E04D4F /* Freedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E579711F08892100E04D4F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
 		55E579731F08892600E04D4F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -51,6 +51,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552FF8D91F0A162D00620217 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				552FF8DE1F0A162D00620217 /* Freedom.swift */,
+				552FF8DD1F0A162D00620217 /* Freedom.bundle */,
+				552FF8EA1F0A164500620217 /* Activities */,
+				552FF8EB1F0A165600620217 /* Protocols */,
+				552FF8EC1F0A165C00620217 /* Extensions */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
+		552FF8EA1F0A164500620217 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				552FF8DA1F0A162D00620217 /* BraveFreedomActivity.swift */,
+				552FF8DB1F0A162D00620217 /* ChromeFreedomActivity.swift */,
+				552FF8DC1F0A162D00620217 /* FirefoxFreedomActivity.swift */,
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
+		552FF8EB1F0A165600620217 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				552FF8DF1F0A162D00620217 /* FreedomActivating.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		552FF8EC1F0A165C00620217 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				552FF8E01F0A162D00620217 /* FreedomURLComponentsExtension.swift */,
+				552FF8E11F0A162D00620217 /* FreedomURLExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		55811EDF1F088E2300D53AA9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,51 +102,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		55A914281F09E8CE000B5311 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				55A914301F09E8CE000B5311 /* Freedom.swift */,
-				55A9142F1F09E8CE000B5311 /* Freedom.bundle */,
-				55A914291F09E8CE000B5311 /* Activities */,
-				55A9142C1F09E8CE000B5311 /* Extensions */,
-				55A914311F09E8CE000B5311 /* Protocols */,
-			);
-			name = Sources;
-			path = ../Sources;
-			sourceTree = "<group>";
-		};
-		55A914291F09E8CE000B5311 /* Activities */ = {
-			isa = PBXGroup;
-			children = (
-				55A9143A1F09E8F1000B5311 /* BraveFreedomActivity.swift */,
-				55A9142A1F09E8CE000B5311 /* ChromeFreedomActivity.swift */,
-				55A9142B1F09E8CE000B5311 /* FirefoxFreedomActivity.swift */,
-			);
-			path = Activities;
-			sourceTree = "<group>";
-		};
-		55A9142C1F09E8CE000B5311 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				55A9142D1F09E8CE000B5311 /* FreedomURLComponentsExtension.swift */,
-				55A9142E1F09E8CE000B5311 /* FreedomURLExtension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		55A914311F09E8CE000B5311 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				55A914321F09E8CE000B5311 /* FreedomActivating.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		55E579531F08877500E04D4F = {
 			isa = PBXGroup;
 			children = (
+				552FF8D91F0A162D00620217 /* Sources */,
 				55E5795E1F08877500E04D4F /* Freedom */,
-				55A914281F09E8CE000B5311 /* Sources */,
 				55E5795D1F08877500E04D4F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55A914371F09E8CE000B5311 /* Freedom.bundle in Resources */,
+				552FF8E51F0A162D00620217 /* Freedom.bundle in Resources */,
 				55811EEB1F088FC900D53AA9 /* Default-568h@2x.png in Resources */,
 				55811EF11F08900400D53AA9 /* Main.storyboard in Resources */,
 				55811EF01F08900400D53AA9 /* LaunchScreen.storyboard in Resources */,
@@ -222,15 +222,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55A914361F09E8CE000B5311 /* FreedomURLExtension.swift in Sources */,
+				552FF8E21F0A162D00620217 /* BraveFreedomActivity.swift in Sources */,
+				552FF8E41F0A162D00620217 /* FirefoxFreedomActivity.swift in Sources */,
 				55E579741F08892600E04D4F /* AppDelegate.swift in Sources */,
-				55A914341F09E8CE000B5311 /* FirefoxFreedomActivity.swift in Sources */,
-				55A914351F09E8CE000B5311 /* FreedomURLComponentsExtension.swift in Sources */,
+				552FF8E71F0A162D00620217 /* FreedomActivating.swift in Sources */,
 				55E579721F08892100E04D4F /* ViewController.swift in Sources */,
-				55A914381F09E8CE000B5311 /* Freedom.swift in Sources */,
-				55A9143B1F09E8F1000B5311 /* BraveFreedomActivity.swift in Sources */,
-				55A914391F09E8CE000B5311 /* FreedomActivating.swift in Sources */,
-				55A914331F09E8CE000B5311 /* ChromeFreedomActivity.swift in Sources */,
+				552FF8E61F0A162D00620217 /* Freedom.swift in Sources */,
+				552FF8E91F0A162D00620217 /* FreedomURLExtension.swift in Sources */,
+				552FF8E81F0A162D00620217 /* FreedomURLComponentsExtension.swift in Sources */,
+				552FF8E31F0A162D00620217 /* ChromeFreedomActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
