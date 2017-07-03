@@ -32,14 +32,6 @@ final class BraveFreedomActivity: UIActivity, FreedomActivating {
 
     var activityURL: URL?
 
-    var callbackURL: URL?
-
-    init(callbackURL: URL? = nil) {
-        super.init()
-
-        self.callbackURL = callbackURL
-    }
-
     override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
         for item in activityItems {
 

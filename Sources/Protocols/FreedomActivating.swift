@@ -10,16 +10,10 @@ import UIKit
 
 protocol FreedomActivating {
 
+    /// Deep Link associated with a third-party browser.
     var activityDeepLink: String? { get set }
 
+    /// URL that should be launched in a third-party browser.
     var activityURL: URL? { get }
-
-    var callbackURL: URL? { get }
-
-    init(callbackURL: URL?)
-    
-}
-
-extension FreedomActivating {
     
 }
