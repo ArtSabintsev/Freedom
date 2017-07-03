@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lu3-Hz-QdM">
-                                <rect key="frame" x="153" y="318" width="70" height="30"/>
+                                <rect key="frame" x="152" y="40" width="70" height="30"/>
                                 <state key="normal" title="Open URL"/>
                                 <connections>
                                     <action selector="openURL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sz9-QC-7k5"/>
@@ -31,8 +31,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lu3-Hz-QdM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BFj-3X-SFk"/>
                             <constraint firstItem="lu3-Hz-QdM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eLZ-Ba-w3F"/>
+                            <constraint firstItem="lu3-Hz-QdM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="hLX-GR-mYi"/>
                         </constraints>
                     </view>
                 </viewController>
