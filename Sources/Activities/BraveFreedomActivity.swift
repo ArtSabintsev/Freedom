@@ -98,11 +98,11 @@ final class BraveFreedomActivity: UIActivity, FreedomActivating {
                 guard opened else {
                     return self.activityDidFinish(false)
                 }
-                Freedom.printDebugMessage("The user successfully opened the url, \(url), in the Brave Browser.")
+                Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Brave Browser.")
             }
         } else {
             UIApplication.shared.openURL(url)
-            Freedom.printDebugMessage("The user successfully opened the url, \(url), in the Brave Browser.")
+            Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Brave Browser.")
         }
         
         activityDidFinish(true)

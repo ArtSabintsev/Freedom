@@ -110,11 +110,11 @@ final class ChromeFreedomActivity: UIActivity, FreedomActivating {
                 guard opened else {
                     return self.activityDidFinish(false)
                 }
-                Freedom.printDebugMessage("The user successfully opened the url, \(url), in Google Chrome.")
+                Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in Google Chrome.")
             }
         } else {
             UIApplication.shared.openURL(url)
-            Freedom.printDebugMessage("The user successfully opened the url, \(url), in Google Chrome.")
+            Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in Google Chrome.")
         }
         
         activityDidFinish(true)
