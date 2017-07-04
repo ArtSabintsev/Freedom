@@ -1,25 +1,25 @@
 //
-//  ChromeFreedomActivity.swift
+//  SafariFreedomActivity.swift
 //  Freedom
 //
-//  Created by Sabintsev, Arthur on 7/1/17.
+//  Created by Arthur Sabintsev on 7/3/17.
 //  Copyright © 2017 Arthur Ariel Sabintsev. All rights reserved.
 //
 
 import UIKit
 
-final class ChromeFreedomActivity: UIActivity, FreedomActivating {
+final class SafariFreedomActivity: UIActivity, FreedomActivating {
 
     override class var activityCategory: UIActivityCategory {
         return .action
     }
 
     override var activityImage: UIImage? {
-        return UIImage(named: "chrome", in: Freedom.bundle, compatibleWith: nil)
+        return UIImage(named: "safari", in: Freedom.bundle, compatibleWith: nil)
     }
 
     override var activityTitle: String? {
-        return "Open in Chrome"
+        return "Open in Safari"
     }
 
     override var activityType: UIActivityType? {
@@ -28,38 +28,19 @@ final class ChromeFreedomActivity: UIActivity, FreedomActivating {
             return nil
         }
 
-        let type = bundleID + "." + String(describing: ChromeFreedomActivity.self)
+        let type = bundleID + "." + String(describing: SafariFreedomActivity.self)
         return UIActivityType(rawValue: type)
     }
 
-    var activityDeepLink: String? = "googlechrome://"
+    var activityDeepLink: String?
 
-    var activityURL: URL? {
-        didSet {
-            guard let scheme = activityURL?.scheme else {
-                Freedom.printDebugMessage("The URL scheme is missing. This happens if a URL does not contain `http://` or `https://`.")
-                return
-            }
-            switch scheme {
-            case URLComponents.Schemes.https:
-                activityDeepLink = "googlechromes://"
-            default:
-                break
-            }
-        }
-    }
+    var activityURL: URL?
 
     override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
         for item in activityItems {
 
-            guard let deepLinkURLString = activityDeepLink,
-                let deepLinkURL = URL(string: deepLinkURLString),
-                UIApplication.shared.canOpenURL(deepLinkURL) else {
-                    return false
-            }
-
             guard let url = item as? URL else {
-               continue
+                continue
             }
 
             guard url.conformToHypertextProtocol() else {
@@ -67,7 +48,7 @@ final class ChromeFreedomActivity: UIActivity, FreedomActivating {
                 return false
             }
 
-            Freedom.printDebugMessage("The user has Google Chrome installed.")
+            Freedom.printDebugMessage("The user has the Firefox Web Browser installed.")
             return true
         }
 
@@ -100,24 +81,19 @@ final class ChromeFreedomActivity: UIActivity, FreedomActivating {
             return activityDidFinish(false)
         }
 
-        guard let deepLink = activityDeepLink,
-            let formattedURL = activityURL.withoutScheme(),
-            let url = URL(string: deepLink + formattedURL.absoluteString) else {
-                return activityDidFinish(false)
-        }
-
         if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:]) { [unowned self] opened in
+            UIApplication.shared.open(activityURL, options: [:]) { [unowned self] opened in
                 guard opened else {
                     return self.activityDidFinish(false)
                 }
-                Freedom.printDebugMessage("The user successfully opened the url, \(formattedURL.absoluteString), in Google Chrome.")
+                Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Firefox Web Browser.")
             }
         } else {
-            UIApplication.shared.openURL(url)
-            Freedom.printDebugMessage("The user successfully opened the url, \(formattedURL.absoluteString), in Google Chrome.")
+            UIApplication.shared.openURL(activityURL)
+            Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Firefox Web Browser.")
         }
         
         activityDidFinish(true)
     }
 }
+

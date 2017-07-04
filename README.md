@@ -9,10 +9,16 @@
 
 Freedom enables your application to open URLs in third-party browsers that your users have installed on their device.
 
-Freedom currently supports:
+### Currently Supported:
 - [Brave Browser](https://itunes.apple.com/us/app/brave-browser-fast-adblocker/id1052879175?mt=8)
 - [Firefox Web Browser](https://itunes.apple.com/us/app/firefox-web-browser/id989804926?mt=8)
 - [Google Chrome](https://itunes.apple.com/us/app/google-chrome-the-fast-and-secure-web-browser/id535886823?mt=8)
+- Safari
+
+### Future Plans
+- [Dolphin Web Browser](https://itunes.apple.com/gb/app/dolphin-web-browser-fast-internet/id452204407?mt=8)
+- [Firefox Focus](https://itunes.apple.com/us/app/firefox-focus-the-privacy-browser/id1055677337?mt=8)
+  - Awaiting [this issue](https://github.com/mozilla-mobile/focus-ios/issues/32) to be resolved.
 
 ## Screenshot
 
@@ -72,10 +78,10 @@ Add the following code to some actionable/tappable element in your project. In t
        // Enable Debug Logs (disabled by default)
        Freedom.debugEnabled = true
 
-       // Fetch activities for all third-party browsers supported by Freedom.
+       // Fetch activities for Safari and all third-party browsers supported by Freedom (see screenshot).
        let activities = Freedom.browsers()
 
-       // Alternatively, one could select a specific browser (or browsers)
+       // Alternatively, one could select a specific browser (or browsers).
        // let activities = Freedom.browsers([.chrome])
 
        let vc = UIActivityViewController(activityItems: [url], applicationActivities: activities)

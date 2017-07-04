@@ -20,6 +20,7 @@
 		55811EF11F08900400D53AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55811EEF1F08900400D53AA9 /* Main.storyboard */; };
 		55E579721F08892100E04D4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E579711F08892100E04D4F /* ViewController.swift */; };
 		55E579741F08892600E04D4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E579731F08892600E04D4F /* AppDelegate.swift */; };
+		8EB7A1FB1F0B11EC00AAAABE /* SafariFreedomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7A1FA1F0B11EC00AAAABE /* SafariFreedomActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		55E5795C1F08877500E04D4F /* Freedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E579711F08892100E04D4F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
 		55E579731F08892600E04D4F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		8EB7A1FA1F0B11EC00AAAABE /* SafariFreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariFreedomActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				552FF8DA1F0A162D00620217 /* BraveFreedomActivity.swift */,
 				552FF8DB1F0A162D00620217 /* ChromeFreedomActivity.swift */,
 				552FF8DC1F0A162D00620217 /* FirefoxFreedomActivity.swift */,
+				8EB7A1FA1F0B11EC00AAAABE /* SafariFreedomActivity.swift */,
 			);
 			name = Activities;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				552FF8E21F0A162D00620217 /* BraveFreedomActivity.swift in Sources */,
 				552FF8E41F0A162D00620217 /* FirefoxFreedomActivity.swift in Sources */,
 				55E579741F08892600E04D4F /* AppDelegate.swift in Sources */,
+				8EB7A1FB1F0B11EC00AAAABE /* SafariFreedomActivity.swift in Sources */,
 				552FF8E71F0A162D00620217 /* FreedomActivating.swift in Sources */,
 				55E579721F08892100E04D4F /* ViewController.swift in Sources */,
 				552FF8E61F0A162D00620217 /* Freedom.swift in Sources */,

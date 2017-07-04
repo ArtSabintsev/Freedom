@@ -6,7 +6,6 @@
 //  Copyright © 2017 Arthur Ariel Sabintsev. All rights reserved.
 //
 
-import Freedom
 import UIKit
 
 class ViewController: UIViewController {
@@ -19,10 +18,10 @@ class ViewController: UIViewController {
         // Enable Debug Logs (disabled by default)
         Freedom.debugEnabled = true
 
-        // Fetch activities for all third-party browsers supported by Freedom.
+        // Fetch activities for Safari and all third-party browsers supported by Freedom.
         let activities = Freedom.browsers()
 
-        // Alternatively, one could select a specific browser (or browsers)
+        // Alternatively, one could select a specific browser (or browsers).
 //        let activities = Freedom.browsers([.chrome])
 
         let vc = UIActivityViewController(activityItems: [url], applicationActivities: activities)
