@@ -19,9 +19,10 @@ public final class Freedom {
         case brave
         case chrome
         case firefox
+        case safari
 
         static var all: [Browser] {
-            return [.brave, .chrome, .firefox]
+            return [.safari, .brave, .chrome, .firefox]
         }
     }
 
@@ -35,6 +36,11 @@ public final class Freedom {
     /// - Returns: Returns an array of UIActivities that the consumer would like to support in their app.
     public static func browsers(_ browsers: [Browser] = Browser.all) -> [UIActivity] {
         var activities: [UIActivity] = []
+
+        if browsers.contains(.safari) {
+            printDebugMessage("Freedom is initialized to support the Safari Browser.")
+            activities.append(SafariFreedomActivity())
+        }
 
         if browsers.contains(.brave) {
             printDebugMessage("Freedom is initialized to support the Brave Browser.")
