@@ -7,7 +7,7 @@
 
 ## About
 
-Freedom enables your application to open URLs in third-party browsers that your users have installed on their device.
+Freedom enables your app to open URLs in third-party browsers that your users have installed on their device.
 
 ### Currently Supported:
 - [Brave Browser](https://itunes.apple.com/us/app/brave-browser-fast-adblocker/id1052879175?mt=8)
