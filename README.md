@@ -9,7 +9,7 @@
 
 Freedom enables your app to open URLs in third-party browsers that your users have installed on their device.
 
-### Currently Supported:
+### Currently Supported
 - [Brave Browser](https://itunes.apple.com/us/app/brave-browser-fast-adblocker/id1052879175?mt=8)
 - [Dolphin Web Browser](https://itunes.apple.com/gb/app/dolphin-web-browser-fast-internet/id452204407?mt=8)
 - [Firefox Web Browser](https://itunes.apple.com/us/app/firefox-web-browser/id989804926?mt=8)
