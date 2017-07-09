@@ -76,9 +76,8 @@ final class ChromeFreedomActivity: UIActivity, FreedomActivating {
 
     override func prepare(withActivityItems activityItems: [Any]) {
         activityItems.forEach { item in
-            guard let url = item as? URL else { return }
-            guard url.conformToHypertextProtocol() else { Freedom.printDebugMessage("The URL scheme is missing. This happens if a URL does not contain `http://` or `https://`.")
-                return
+            guard let url = item as? URL, url.conformToHypertextProtocol() else {
+                return Freedom.printDebugMessage("The URL scheme is missing. This happens if a URL does not contain `http://` or `https://`.")
             }
 
             let urlString = url.absoluteString
@@ -89,7 +88,6 @@ final class ChromeFreedomActivity: UIActivity, FreedomActivating {
             }
 
             activityURL = escapedURL
-
             return
         }
     }
