@@ -9,35 +9,42 @@
     },
     {
       "file": "/Users/Arthur/Documents/oss/freedom/Sources/Freedom.swift",
-      "line": 19,
+      "line": 20,
       "symbol": "Freedom.Browser.brave",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Arthur/Documents/oss/freedom/Sources/Freedom.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "Freedom.Browser.chrome",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Arthur/Documents/oss/freedom/Sources/Freedom.swift",
-      "line": 21,
+      "line": 22,
+      "symbol": "Freedom.Browser.dolphin",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/freedom/Sources/Freedom.swift",
+      "line": 23,
       "symbol": "Freedom.Browser.firefox",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Arthur/Documents/oss/freedom/Sources/Freedom.swift",
-      "line": 22,
+      "line": 24,
       "symbol": "Freedom.Browser.safari",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Arthur/Documents/oss/freedom/Sources/Freedom.swift",
-      "line": 30,
+      "line": 32,
       "symbol": "Freedom.debugEnabled",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
