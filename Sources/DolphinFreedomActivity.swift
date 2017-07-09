@@ -1,25 +1,25 @@
 //
-//  SafariFreedomActivity.swift
+//  DolphinFreedomActivity.swift
 //  Freedom
 //
-//  Created by Arthur Sabintsev on 7/3/17.
+//  Created by Arthur Sabintsev on 7/8/17.
 //  Copyright © 2017 Arthur Ariel Sabintsev. All rights reserved.
 //
 
 import UIKit
 
-final class SafariFreedomActivity: UIActivity, FreedomActivating {
+final class DolphinFreedomActivity: UIActivity, FreedomActivating {
 
     override class var activityCategory: UIActivityCategory {
         return .action
     }
 
     override var activityImage: UIImage? {
-        return UIImage(named: "safari", in: Freedom.bundle, compatibleWith: nil)
+        return UIImage(named: "dolphin", in: Freedom.bundle, compatibleWith: nil)
     }
 
     override var activityTitle: String? {
-        return "Open in Safari"
+        return "Open in Dolphin"
     }
 
     override var activityType: UIActivityType? {
@@ -28,16 +28,22 @@ final class SafariFreedomActivity: UIActivity, FreedomActivating {
             return nil
         }
 
-        let type = bundleID + "." + String(describing: SafariFreedomActivity.self)
+        let type = bundleID + "." + String(describing: DolphinFreedomActivity.self)
         return UIActivityType(rawValue: type)
     }
 
-    var activityDeepLink: String?
+    var activityDeepLink: String? = "dolphin://"
 
     var activityURL: URL?
 
     override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
         for item in activityItems {
+
+            guard let deepLinkURLString = activityDeepLink,
+                let deepLinkURL = URL(string: deepLinkURLString),
+                UIApplication.shared.canOpenURL(deepLinkURL) else {
+                    return false
+            }
 
             guard let url = item as? URL else {
                 continue
@@ -48,7 +54,7 @@ final class SafariFreedomActivity: UIActivity, FreedomActivating {
                 return false
             }
 
-            Freedom.printDebugMessage("The user has the Safari Web Browser installed.")
+            Freedom.printDebugMessage("The user has the Dolphin Web Browser installed.")
             return true
         }
 
@@ -79,19 +85,24 @@ final class SafariFreedomActivity: UIActivity, FreedomActivating {
             return activityDidFinish(false)
         }
 
+        guard let deepLink = activityDeepLink,
+            let formattedURL = activityURL.withoutScheme(),
+            let url = URL(string: deepLink + formattedURL.absoluteString) else {
+                return activityDidFinish(false)
+        }
+
         if #available(iOS 10.0, *) {
-            UIApplication.shared.open(activityURL, options: [:]) { [unowned self] opened in
+            UIApplication.shared.open(url, options: [:]) { [unowned self] opened in
                 guard opened else {
                     return self.activityDidFinish(false)
                 }
-                Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Safari Web Browser.")
+                Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Dolphin Browser.")
             }
         } else {
-            UIApplication.shared.openURL(activityURL)
-            Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Safari Web Browser.")
+            UIApplication.shared.openURL(url)
+            Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Dolphin Browser.")
         }
         
         activityDidFinish(true)
     }
 }
-

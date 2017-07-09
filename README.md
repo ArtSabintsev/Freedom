@@ -11,12 +11,12 @@ Freedom enables your app to open URLs in third-party browsers that your users ha
 
 ### Currently Supported:
 - [Brave Browser](https://itunes.apple.com/us/app/brave-browser-fast-adblocker/id1052879175?mt=8)
+- [Dolphin Web Browser](https://itunes.apple.com/gb/app/dolphin-web-browser-fast-internet/id452204407?mt=8)
 - [Firefox Web Browser](https://itunes.apple.com/us/app/firefox-web-browser/id989804926?mt=8)
 - [Google Chrome](https://itunes.apple.com/us/app/google-chrome-the-fast-and-secure-web-browser/id535886823?mt=8)
 - Safari
 
 ### Future Plans
-- [Dolphin Web Browser](https://itunes.apple.com/gb/app/dolphin-web-browser-fast-internet/id452204407?mt=8)
 - [Firefox Focus](https://itunes.apple.com/us/app/firefox-focus-the-privacy-browser/id1055677337?mt=8)
   - Awaiting [this issue](https://github.com/mozilla-mobile/focus-ios/issues/32) to be resolved.
 
@@ -61,9 +61,10 @@ Open your `Info.plist` file, and add the following URL schemes to the `LSApplica
 ```xml
 <key>LSApplicationQueriesSchemes</key>
 <array>
-  <string>googlechrome</string>
-  <string>firefox</string>
   <string>brave</string>
+  <string>dolphin</string>
+  <string>firefox</string>
+  <string>googlechrome</string>
 </array>
 ```
 
@@ -83,7 +84,6 @@ Add the following code to some actionable/tappable element in your project. In t
 
        // Alternatively, one could select a specific browser (or browsers).
        // let activities = Freedom.browsers([.chrome])
-
        let vc = UIActivityViewController(activityItems: [url], applicationActivities: activities)
 
        present(vc, animated: true, completion: nil)
