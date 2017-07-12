@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Freedom.xcodeproj">
+      location = "self:/Users/Arthur/Documents/oss/freedom/FreedomExample/FreedomExample.xcodeproj">
    </FileRef>
 </Workspace>

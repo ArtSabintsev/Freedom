@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "55E5795B1F08877500E04D4F"
-               BuildableName = "Freedom.app"
-               BlueprintName = "Freedom"
-               ReferencedContainer = "container:Freedom.xcodeproj">
+               BuildableName = "FreedomExample.app"
+               BlueprintName = "FreedomExample"
+               ReferencedContainer = "container:FreedomExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "55E5795B1F08877500E04D4F"
-            BuildableName = "Freedom.app"
-            BlueprintName = "Freedom"
-            ReferencedContainer = "container:Freedom.xcodeproj">
+            BuildableName = "FreedomExample.app"
+            BlueprintName = "FreedomExample"
+            ReferencedContainer = "container:FreedomExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "55E5795B1F08877500E04D4F"
-            BuildableName = "Freedom.app"
-            BlueprintName = "Freedom"
-            ReferencedContainer = "container:Freedom.xcodeproj">
+            BuildableName = "FreedomExample.app"
+            BlueprintName = "FreedomExample"
+            ReferencedContainer = "container:FreedomExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "55E5795B1F08877500E04D4F"
-            BuildableName = "Freedom.app"
-            BlueprintName = "Freedom"
-            ReferencedContainer = "container:Freedom.xcodeproj">
+            BuildableName = "FreedomExample.app"
+            BlueprintName = "FreedomExample"
+            ReferencedContainer = "container:FreedomExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
