@@ -2,6 +2,8 @@
 
 ### The Freedom to Open URLs in Third-Party Browsers on iOS with Custom UIActivity Subclasses.
 
+![Swift Support](https://img.shields.io/badge/Swift-3.1%2C%203.2%2C%204.0-orange.svg)
+
  [![CocoaPods](https://img.shields.io/cocoapods/v/Freedom.svg)](https://cocoapods.org/pods/Freedom)  [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/) [![CocoaPods](https://img.shields.io/cocoapods/dt/Freedom.svg)](https://cocoapods.org/pods/Freedom) [![CocoaPods](https://img.shields.io/cocoapods/dm/Freedom.svg)](https://cocoapods.org/pods/Freedom)
 ---
 
@@ -25,6 +27,12 @@ Freedom enables your app to open URLs in third-party browsers that your users ha
 <img src="https://github.com/ArtSabintsev/Freedom/blob/master/screenshot.png?raw=true" height="480">
 
 ## Installation Instructions
+
+| Swift Version |  Branch Name  | Will Continue to Receive Updates?
+| ------------- | ------------- |  -------------
+| 4.0  | master   | **Yes**
+| 3.2  | swift3.2 | No
+| 3.1  | swift3.1 | No
 
 ### CocoaPods
 For Swift 3 support:

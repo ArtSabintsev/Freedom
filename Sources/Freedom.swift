@@ -23,7 +23,7 @@ public final class Freedom {
         case firefox
         case safari
 
-        static var all: [Browser] {
+        public static var all: [Browser] {
             return [.safari, .brave, .chrome, .dolphin, .firefox]
         }
     }

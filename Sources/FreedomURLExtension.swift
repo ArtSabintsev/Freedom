@@ -18,7 +18,7 @@ extension URL {
 
         let urlString = url.absoluteString
         let index = urlString.index(urlString.startIndex, offsetBy: 2)
-        let modifiedString = urlString.substring(from: index)
+        let modifiedString = String(describing: urlString[index...])
 
         return URL(string: modifiedString)
     }
