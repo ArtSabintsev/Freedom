@@ -11,14 +11,14 @@ import Foundation
 extension URL {
 
     func withoutScheme() -> URL? {
-        let components = NSURLComponents(url: self, resolvingAgainstBaseURL: false)
+        var components = URLComponents(url: self, resolvingAgainstBaseURL: false)
         components?.scheme = nil
 
         guard let url = components?.url else { return nil }
 
         let urlString = url.absoluteString
         let index = urlString.index(urlString.startIndex, offsetBy: 2)
-        let modifiedString = urlString.substring(from: index)
+        let modifiedString = String(describing: urlString[index...])
 
         return URL(string: modifiedString)
     }

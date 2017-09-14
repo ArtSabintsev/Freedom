@@ -23,12 +23,12 @@ public final class Freedom {
         case firefox
         case safari
 
-        static var all: [Browser] {
+        public static var all: [Browser] {
             return [.safari, .brave, .chrome, .dolphin, .firefox]
         }
     }
 
-    // Enables Debug Logs. Disabled by default.
+    /// Enables Debug Logs. Disabled by default.
     public static var debugEnabled = false
 
     /// An array of `UIActivity` instances that represent third-party browsers that
