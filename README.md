@@ -32,26 +32,36 @@ Freedom enables your app to open URLs in third-party browsers that your users ha
 | 3.1  | swift3.1 | No
 
 ### CocoaPods
-For Swift 3 support:
+For Swift 4 support:
 ```ruby
 pod 'Freedom'
 ```
 
-For Swift 4 support:
+For Swift 3.2 support:
 ```ruby
-pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch => 'swift4'
+pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch => 'swift3.2'
+```
+
+For Swift 3.1 support:
+```ruby
+pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch => 'swift3.1'
 ```
 
 ### Carthage
-For Swift 3 support:
+For Swift 4 support:
 
 ```swift
 github "ArtSabintsev/Freedom"
 ```
 
-For Swift 4 support:
+For Swift 3.2 support:
 ```swift
-github "ArtSabintsev/Freedom", "swift4"
+github "ArtSabintsev/Freedom", "swift3.2"
+```
+
+For Swift 3.1 support:
+```swift
+github "ArtSabintsev/Freedom", "swift3.1"
 ```
 
 ### Swift Package Manager
