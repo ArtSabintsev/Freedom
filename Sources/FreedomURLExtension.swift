@@ -11,7 +11,7 @@ import Foundation
 extension URL {
 
     func withoutScheme() -> URL? {
-        let components = NSURLComponents(url: self, resolvingAgainstBaseURL: false)
+        var components = URLComponents(url: self, resolvingAgainstBaseURL: false)
         components?.scheme = nil
 
         guard let url = components?.url else { return nil }
