@@ -22,6 +22,7 @@
 	<array>
 		<string>googlechrome</string>
 		<string>firefox</string>
+		<string>firefox-focus</string>
 		<string>brave</string>
 		<string>dolphin</string>
 	</array>

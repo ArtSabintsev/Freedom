@@ -16,15 +16,17 @@ public final class Freedom {
     /// - chrome: Google Chrome (https://itunes.apple.com/us/app/google-chrome-the-fast-and-secure-web-browser/id535886823?mt=8)
     /// - dolphin: Dolphin Web Browser (https://itunes.apple.com/gb/app/dolphin-web-browser-fast-internet/id452204407?mt=8)
     /// - firefox: Firefox Web Browser (https://itunes.apple.com/us/app/firefox-web-browser/id989804926?mt=8)
+    /// - firefoxFocus: Firefox Focus Web Browser (https://itunes.apple.com/us/app/firefox-focus-the-privacy-browser/id1055677337?mt=8)
     public enum Browser {
         case brave
         case chrome
         case dolphin
         case firefox
+        case firefoxFocus
         case safari
 
         public static var all: [Browser] {
-            return [.safari, .brave, .chrome, .dolphin, .firefox]
+            return [.safari, .brave, .chrome, .dolphin, .firefox, .firefoxFocus]
         }
     }
 
@@ -62,6 +64,11 @@ public final class Freedom {
         if browsers.contains(.firefox) {
             printDebugMessage("Freedom is initialized to support the Firefox Web Browser.")
             activities.append(FirefoxFreedomActivity())
+        }
+
+        if browsers.contains(.firefoxFocus) {
+            printDebugMessage("Freedom is initialized to support the Firefox Focus Web Browser.")
+            activities.append(FirefoxFocusFreedomActivity())
         }
 
         return activities

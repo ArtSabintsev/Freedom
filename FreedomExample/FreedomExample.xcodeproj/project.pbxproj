@@ -25,6 +25,7 @@
 		8E3240D71F15C05900F1C368 /* FreedomActivating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FF8DF1F0A162D00620217 /* FreedomActivating.swift */; };
 		8E3240D81F15C05E00F1C368 /* FreedomURLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FF8E01F0A162D00620217 /* FreedomURLComponentsExtension.swift */; };
 		8E3240D91F15C05E00F1C368 /* FreedomURLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FF8E11F0A162D00620217 /* FreedomURLExtension.swift */; };
+		8EBD3B571F6A1C1800ACD785 /* FirefoxFocusFreedomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBD3B561F6A1C1800ACD785 /* FirefoxFocusFreedomActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		8E3240C61F15C02C00F1C368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E4C05C61F11BB410077A16A /* DolphinFreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DolphinFreedomActivity.swift; sourceTree = "<group>"; };
 		8EB7A1FA1F0B11EC00AAAABE /* SafariFreedomActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariFreedomActivity.swift; sourceTree = "<group>"; };
+		8EBD3B561F6A1C1800ACD785 /* FirefoxFocusFreedomActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirefoxFocusFreedomActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				552FF8DB1F0A162D00620217 /* ChromeFreedomActivity.swift */,
 				8E4C05C61F11BB410077A16A /* DolphinFreedomActivity.swift */,
 				552FF8DC1F0A162D00620217 /* FirefoxFreedomActivity.swift */,
+				8EBD3B561F6A1C1800ACD785 /* FirefoxFocusFreedomActivity.swift */,
 				8EB7A1FA1F0B11EC00AAAABE /* SafariFreedomActivity.swift */,
 			);
 			name = Activities;
@@ -337,6 +340,7 @@
 				8E3240D71F15C05900F1C368 /* FreedomActivating.swift in Sources */,
 				8E3240D61F15C05400F1C368 /* SafariFreedomActivity.swift in Sources */,
 				8E3240D01F15C04900F1C368 /* Freedom.swift in Sources */,
+				8EBD3B571F6A1C1800ACD785 /* FirefoxFocusFreedomActivity.swift in Sources */,
 				8E3240D91F15C05E00F1C368 /* FreedomURLExtension.swift in Sources */,
 				8E3240D81F15C05E00F1C368 /* FreedomURLComponentsExtension.swift in Sources */,
 				8E3240D31F15C05400F1C368 /* ChromeFreedomActivity.swift in Sources */,
