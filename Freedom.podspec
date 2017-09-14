@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Freedom"
-  s.version      = "1.0.8"
+  s.version      = "2.0.0"
   s.summary      = "The Freedom to Open URLs in Third-Party Browsers on iOS with Custom UIActivity Subclasses."
 
   s.description  = <<-DESC
