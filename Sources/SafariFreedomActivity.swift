@@ -90,7 +90,7 @@ final class SafariFreedomActivity: UIActivity, FreedomActivating {
                 Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Safari Web Browser.")
             }
         } else {
-            UIApplication.shared.openURL(activityURL) 
+            UIApplication.shared.openURL(activityURL)
             Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Safari Web Browser.")
         }
         
