@@ -91,10 +91,13 @@ final class FirefoxFreedomActivity: UIActivity, FreedomActivating {
         }
 
         if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:]) { [unowned self] opened in
+            UIApplication.shared.open(url, options: [:]) { [weak self] opened in
+                guard let strongSelf = self else { return }
+                
                 guard opened else {
-                    return self.activityDidFinish(false)
+                    return strongSelf.activityDidFinish(false)
                 }
+
                 Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Firefox Web Browser.")
             }
         } else {

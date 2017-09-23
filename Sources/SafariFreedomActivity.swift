@@ -80,14 +80,17 @@ final class SafariFreedomActivity: UIActivity, FreedomActivating {
         }
 
         if #available(iOS 10.0, *) {
-            UIApplication.shared.open(activityURL, options: [:]) { [unowned self] opened in
+            UIApplication.shared.open(activityURL, options: [:]) { [weak self] opened in
+                guard let strongSelf = self else { return }
+
                 guard opened else {
-                    return self.activityDidFinish(false)
+                    return strongSelf.activityDidFinish(false)
                 }
+
                 Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Safari Web Browser.")
             }
         } else {
-            UIApplication.shared.openURL(activityURL)
+            UIApplication.shared.openURL(activityURL) 
             Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Safari Web Browser.")
         }
         
