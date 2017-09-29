@@ -66,15 +66,8 @@ final class FirefoxFreedomActivity: UIActivity, FreedomActivating {
             guard let url = item as? URL, url.conformToHypertextProtocol() else {
                 return Freedom.printDebugMessage("The URL scheme is missing. This happens if a URL does not contain `http://` or `https://`.")
             }
-
-            let urlString = url.absoluteString
-
-            guard let escapedURLString = urlString.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed),
-                let escapedURL = URL(string: escapedURLString) else {
-                    return Freedom.printDebugMessage("Failed to optionally unwrap a percent-encoded url.")
-            }
-
-            activityURL = escapedURL
+            
+            activityURL = url
             return
         }
     }
@@ -99,12 +92,12 @@ final class FirefoxFreedomActivity: UIActivity, FreedomActivating {
                 }
 
                 Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Firefox Web Browser.")
+                strongSelf.activityDidFinish(true)
             }
         } else {
             UIApplication.shared.openURL(url)
             Freedom.printDebugMessage("The user successfully opened the url, \(activityURL.absoluteString), in the Firefox Web Browser.")
+            activityDidFinish(true)
         }
-        
-        activityDidFinish(true)
     }
 }
