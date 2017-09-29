@@ -79,15 +79,8 @@ final class ChromeFreedomActivity: UIActivity, FreedomActivating {
             guard let url = item as? URL, url.conformToHypertextProtocol() else {
                 return Freedom.printDebugMessage("The URL scheme is missing. This happens if a URL does not contain `http://` or `https://`.")
             }
-
-            let urlString = url.absoluteString
-
-            guard let escapedURLString = urlString.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed),
-                let escapedURL = URL(string: escapedURLString) else {
-                    return Freedom.printDebugMessage("Failed to optionally unwrap a percent-encoded url.")
-            }
-
-            activityURL = escapedURL
+            
+            activityURL = url
             return
         }
     }
@@ -105,17 +98,20 @@ final class ChromeFreedomActivity: UIActivity, FreedomActivating {
         }
 
         if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:]) { [unowned self] opened in
+            UIApplication.shared.open(activityURL, options: [:]) { [weak self] opened in
+                guard let strongSelf = self else { return }
+                
                 guard opened else {
-                    return self.activityDidFinish(false)
+                    return strongSelf.activityDidFinish(false)
                 }
+
                 Freedom.printDebugMessage("The user successfully opened the url, \(formattedURL.absoluteString), in Google Chrome.")
+                strongSelf.activityDidFinish(true)
             }
         } else {
             UIApplication.shared.openURL(url)
             Freedom.printDebugMessage("The user successfully opened the url, \(formattedURL.absoluteString), in Google Chrome.")
+            activityDidFinish(true)
         }
-        
-        activityDidFinish(true)
     }
 }
