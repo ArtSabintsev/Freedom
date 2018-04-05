@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
-gem "cocoapods", "1.4.0"
+gem "cocoapods"
 gem "synx"
 gem "jazzy"
