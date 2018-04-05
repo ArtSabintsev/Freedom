@@ -25,9 +25,9 @@ class ViewController: UIViewController {
         // Alternatively, one could select a specific browser (or browsers).
 //        let activities = Freedom.browsers([.chrome])
 
-        let vc = UIActivityViewController(activityItems: [url], applicationActivities: activities)
+        let viewController = UIActivityViewController(activityItems: [url], applicationActivities: activities)
 
-        present(vc, animated: true, completion: nil)
+        present(viewController, animated: true, completion: nil)
 
     }
 
