@@ -32,7 +32,7 @@ Freedom enables your app to open URLs in third-party browsers that your users ha
 | 3.1  | swift3.1 | No
 
 ### CocoaPods
-For Swift 4 support:
+For Swift 4.1 support:
 ```ruby
 pod 'Freedom'
 ```
@@ -48,7 +48,7 @@ pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch =>
 ```
 
 ### Carthage
-For Swift 4 support:
+For Swift 4.1 support:
 
 ```swift
 github "ArtSabintsev/Freedom"
