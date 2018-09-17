@@ -10,7 +10,7 @@ import UIKit
 
 final class FirefoxFocusFreedomActivity: UIActivity, FreedomActivating {
 
-    override class var activityCategory: UIActivityCategory {
+    override class var activityCategory: UIActivity.Category {
         return .action
     }
 
@@ -22,14 +22,14 @@ final class FirefoxFocusFreedomActivity: UIActivity, FreedomActivating {
         return "Open in Firefox Focus"
     }
 
-    override var activityType: UIActivityType? {
+    override var activityType: UIActivity.ActivityType? {
         guard let bundleID = Bundle.main.bundleIdentifier else {
             Freedom.printDebugMessage("Failed to fetch the bundleID.")
             return nil
         }
         
         let type = bundleID + "." + String(describing: FirefoxFocusFreedomActivity.self)
-        return UIActivityType(rawValue: type)
+        return UIActivity.ActivityType(rawValue: type)
     }
 
     var activityDeepLink: String? = "firefox-focus://"

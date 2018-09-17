@@ -2,7 +2,7 @@
 
 ### The Freedom to Open URLs in Third-Party Browsers on iOS with Custom UIActivity Subclasses.
 
-![Swift Support](https://img.shields.io/badge/Swift-3.1%2C%203.2%2C%204.1-orange.svg)
+![Swift Support](https://img.shields.io/badge/Swift-4.2%2C%204.1%2C%203.2%2C%203.1-orange.svg)
 
  [![CocoaPods](https://img.shields.io/cocoapods/v/Freedom.svg)](https://cocoapods.org/pods/Freedom)  [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/)
 
@@ -28,41 +28,25 @@ Freedom enables your app to open URLs in third-party browsers that your users ha
 
 | Swift Version |  Branch Name  | Will Continue to Receive Updates?
 | ------------- | ------------- |  -------------
-| 4.1  | master   | **Yes**
+| 4.2  | master   | **Yes**
+| 3.2  | swift4.1 | No
 | 3.2  | swift3.2 | No
 | 3.1  | swift3.1 | No
 
 ### CocoaPods
-For Swift 4.1 support:
 ```ruby
-pod 'Freedom'
-```
-
-For Swift 3.2 support:
-```ruby
-pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch => 'swift3.2'
-```
-
-For Swift 3.1 support:
-```ruby
-pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch => 'swift3.1'
+pod 'Freedom' # Swift 4.2
+pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch => 'swift4.1' # Swift 4.1
+pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch => 'swift3.2' # Swift 3.2
+pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch => 'swift3.1' # Swift 3.1
 ```
 
 ### Carthage
-For Swift 4.1 support:
-
 ```swift
-github "ArtSabintsev/Freedom"
-```
-
-For Swift 3.2 support:
-```swift
-github "ArtSabintsev/Freedom", "swift3.2"
-```
-
-For Swift 3.1 support:
-```swift
-github "ArtSabintsev/Freedom", "swift3.1"
+github "ArtSabintsev/Freedom" // Swift 4.2
+github "ArtSabintsev/Freedom", "swift4.1" // Swift 4.1
+github "ArtSabintsev/Freedom", "swift3.2" // Swift 3.2
+github "ArtSabintsev/Freedom", "swift3.1" // Swift 3.1
 ```
 
 ### Swift Package Manager

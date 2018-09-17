@@ -10,7 +10,7 @@ import UIKit
 
 final class BraveFreedomActivity: UIActivity, FreedomActivating {
 
-    override class var activityCategory: UIActivityCategory {
+    override class var activityCategory: UIActivity.Category {
         return .action
     }
 
@@ -22,14 +22,14 @@ final class BraveFreedomActivity: UIActivity, FreedomActivating {
         return "Open in Brave"
     }
 
-    override var activityType: UIActivityType? {
+    override var activityType: UIActivity.ActivityType? {
         guard let bundleID = Bundle.main.bundleIdentifier else {
             Freedom.printDebugMessage("Failed to fetch the bundleID.")
             return nil
         }
 
         let type = bundleID + "." + String(describing: BraveFreedomActivity.self)
-        return UIActivityType(rawValue: type)
+        return UIActivity.ActivityType(rawValue: type)
     }
 
     var activityDeepLink: String? = "brave://"
