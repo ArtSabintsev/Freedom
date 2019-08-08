@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   # Version
-  s.version       = "2.3.0"
+  s.version       = "2.3.1"
 
   #Meta 
   s.name          = "Freedom"
