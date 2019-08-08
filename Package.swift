@@ -1,5 +1,8 @@
+// swift-tools-version:4.0
 import PackageDescription
 
 let package = Package(
-  name: "Freedom"
+    name: "Freedom",
+    products: [.library(name: "Freedom", targets: ["Freedom"])],
+    targets: [.target(name: "Freedom", path: "Sources")]
 )
