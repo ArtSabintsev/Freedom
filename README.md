@@ -30,7 +30,7 @@ Freedom enables your app to open URLs in third-party browsers that your users ha
 | ------------- | ------------- |  -------------
 | 5.1  | swift5.1 | **Yes**
 | 5.0  | master   | **Yes**
-| 4.2  | master   | No
+| 4.2  | swift4.2 | No
 | 3.2  | swift4.1 | No
 | 3.2  | swift3.2 | No
 | 3.1  | swift3.1 | No
