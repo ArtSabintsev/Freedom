@@ -28,6 +28,7 @@ Freedom enables your app to open URLs in third-party browsers that your users ha
 
 | Swift Version |  Branch Name  | Will Continue to Receive Updates?
 | ------------- | ------------- |  -------------
+| 5.1  | swift5.1 | **Yes**
 | 5.0  | master   | **Yes**
 | 4.2  | master   | No
 | 3.2  | swift4.1 | No
