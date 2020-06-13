@@ -3,8 +3,8 @@ import PackageDescription
 
 let package = Package(
     name: "Freedom",
+    platforms: [.iOS(.v9)],  
     products: [.library(name: "Freedom", targets: ["Freedom"])],
     targets: [.target(name: "Freedom", path: "Sources")],
-    platforms: [.iOS(.v9)],  
     swiftLanguageVersions: [.v5]
 )
