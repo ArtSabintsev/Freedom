@@ -2,7 +2,7 @@
 
 ### The Freedom to Open URLs in Third-Party Browsers on iOS with Custom UIActivity Subclasses.
 
-![Swift Support](https://img.shields.io/badge/Swift-5.1%2C%205.0%2C%204.2%2C%204.1%2C%203.2%2C%203.1-orange.svg)
+![Swift Support](https://img.shields.io/badge/Swift-5.2%2C%205.1%2C%205.0%2C%204.2%2C%204.1%2C%203.2%2C%203.1-orange.svg)
 
  [![CocoaPods](https://img.shields.io/cocoapods/v/Freedom.svg)](https://cocoapods.org/pods/Freedom)  [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/)
 
@@ -28,7 +28,7 @@ Freedom enables your app to open URLs in third-party browsers that your users ha
 
 | Swift Version |  Branch Name  | Will Continue to Receive Updates?
 | ------------- | ------------- |  -------------
-| 5.1  | master | **Yes**
+| 5.1-5.2  | master | **Yes**
 | 5.0  | swift5.0 | No
 | 4.2  | swift4.2 | No
 | 3.2  | swift4.1 | No
@@ -37,7 +37,7 @@ Freedom enables your app to open URLs in third-party browsers that your users ha
 
 ### CocoaPods
 ```ruby
-pod 'Freedom' # Swift 5.0
+pod 'Freedom' # Swift 5.1+
 pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch => 'swift5.0' # Swift 5.0
 pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch => 'swift4.2' # Swift 4.2
 pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch => 'swift4.1' # Swift 4.1
@@ -47,7 +47,7 @@ pod 'Freedom', :git => 'https://github.com/ArtSabintsev/Freedom.git', :branch =>
 
 ### Carthage
 ```swift
-github "ArtSabintsev/Freedom" // Swift 5.1
+github "ArtSabintsev/Freedom" // Swift 5.1+
 github "ArtSabintsev/Freedom", "swift5.0" // Swift 5.0
 github "ArtSabintsev/Freedom", "swift4.2" // Swift 4.2
 github "ArtSabintsev/Freedom", "swift4.1" // Swift 4.1
